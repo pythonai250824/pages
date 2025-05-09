@@ -31,13 +31,13 @@
 ## NumPy
 - התקנה: `pip install numpy`
 - ייבוא: `import numpy as np`
-- יצירת מערכים עם `np.array()`
+- יצירת מערכים עם `np.array`
 - הבדל בין NumPy Arrays ל־Python Lists
-- פעולות מתמטיות על מערכים: `+`, `*`, `sum()`, `mean()`
-- פונקציות: `reshape()`, `max()`, `min()`, `argmax()`, `argmin()`, `shape`
+- פעולות מתמטיות על מערכים: `+`, `*`, `sum`, `mean`
+- פונקציות: `reshape`, `max`, `min`, `argmax`, `argmin`, `shape`
 - סינון עם תנאים (`array[array > 10]`)
 - גישה למשתני מערך עם סלייסים
-- העתקה עמוקה עם `copy()`
+- העתקה עמוקה עם `copy`
 - שימוש ב־axis=0 ו־axis=1 בפעולות על מטריצות
 
 ---
@@ -52,43 +52,43 @@
 
 ### פעולות על DataFrame
 - טעינת CSV: `pd.read_csv("path")`
-- הצגת מידע: `head()`, `tail()`, `info()`, `describe()`
+- הצגת מידע: `head`, `tail`, `info`, `describe`
 - גישה לעמודות: `df['col']`, `df[['col1', 'col2']]`
 - יצירת עמודה חדשה או חיבור עמודות
-- מחיקת שורה/עמודה עם `drop()` (כולל inplace, axis)
+- מחיקת שורה/עמודה עם `drop` (כולל inplace, axis)
 
 ### סינון תנאי (Boolean Filtering)
 - `df[df['col'] > 100]`
 - תנאים מרובים עם `&`, `|`
 
 ### פונקציות מתקדמות
-- `apply()` עם פונקציות מותאמות אישית
-- `np.vectorize()` לעבודה על מספר עמודות
+- `apply` עם פונקציות מותאמות אישית
+- `np.vectorize` לעבודה על מספר עמודות
 
 ### סטטיסטיקות
-- `value_counts()`, `unique()`, `nunique()`
-- `replace()`, `map()`, `duplicated()`, `drop_duplicates()`
-- `nlargest()`, `nsmallest()`, `sample()`
+- `value_counts`, `unique`, `nunique`
+- `replace`, `map`, `duplicated`, `drop_duplicates`
+- `nlargest`, `nsmallest`, `sample`
 
 ### טיפול בערכים חסרים
 - השארה עם NaN
-- מחיקה עם `dropna()`
+- מחיקה עם `dropna`
 - השלמה עם `fillna(value)`
 - מחיקה לפי שורות או עמודות לפי אחוזי חוסר
 
 ### קיבוץ (`groupby`)
-- `df.groupby('column').mean()`
+- `df.groupby('column').mean`
 - קיבוץ לפי מספר עמודות → MultiIndex
 - שליפת שורה עם `loc[]`
-- שליפת ערכים לפי רמת אינדקס עם `xs()`
-- `agg()` לביצוע מספר פעולות שונות
+- שליפת ערכים לפי רמת אינדקס עם `xs`
+- `agg` לביצוע מספר פעולות שונות
 
 ### קיבוץ לפי זמן
 ```python
 df['date'] = pd.to_datetime(df['date'])
 df.set_index('date', inplace=True)
-df.groupby(df.index.year)['sales'].sum()
-df.groupby(df.index.month)['visits'].mean()
+df.groupby(df.index.year)['sales'].sum
+df.groupby(df.index.month)['visits'].mean
 ```
 
 ### מיזוג טבלאות (Merge)
@@ -106,10 +106,10 @@ df.groupby(df.index.month)['visits'].mean()
 ## Matplotlib
 - התקנה: `pip install matplotlib`
 - ייבוא: `import matplotlib.pyplot as plt`
-- `plt.plot(x, y)`, `title`, `xlabel`, `ylabel`, `xlim()`, `ylim()`
-- שמירת גרף עם `savefig()`
+- `plt.plot(x, y)`, `title`, `xlabel`, `ylabel`, `xlim`, `ylim`
+- שמירת גרף עם `savefig`
 - עבודה עם Figure ו־Axes
-- `subplot()`, `tight_layout()`, `legend()`, `style`, `marker`
+- `subplot`, `tight_layout`, `legend`, `style`, `marker`
 - סוגי גרפים:
   - Line
   - Bar
@@ -123,11 +123,11 @@ df.groupby(df.index.month)['visits'].mean()
 - התקנה: `pip install seaborn`
 - ייבוא: `import seaborn as sns`
 - גרפים:
-  - `sns.scatterplot()`
-  - `sns.displot()` / `sns.histplot()`
-  - `sns.countplot()`
-  - `sns.barplot()`
-  - `sns.boxplot()`
+  - `sns.scatterplot`
+  - `sns.displot` / `sns.histplot`
+  - `sns.countplot`
+  - `sns.barplot`
+  - `sns.boxplot`
 - פרמטרים חשובים: `hue`, `palette`, `style`, `size`, `alpha`
-- KDE: `kde=True` או `sns.kdeplot()`
-- שמירת גרף עם `plt.savefig()`
+- KDE: `kde=True` או `sns.kdeplot`
+- שמירת גרף עם `plt.savefig`
