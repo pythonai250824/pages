@@ -101,6 +101,7 @@ df.groupby(df.index.month)['visits'].mean
 - `pd.concat([df1, df2], axis=0)`  # שורות
 - `pd.concat([df1, df2], axis=1)`  # עמודות
 
+### טבלת PIVOT
 ---
 
 ## Matplotlib
