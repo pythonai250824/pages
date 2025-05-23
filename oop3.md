@@ -16,7 +16,7 @@
 | + __init__(quack_volume=5)                                    |
 | + squeak(): None                         [@static-method]     |
 | + get_color(): str                       [@class-method]      |
-| + boost_volume(): None                   [instance-method]    |
+| + boost_volume(): None                   [@instance-method]   |
 | + quack_volume: int                      [@property]          |
 | + quack_volume(value: int): None         [@setter]            |
 | + __str__(): str                         [@instance-method]   |
