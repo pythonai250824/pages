@@ -55,6 +55,6 @@ print("🎨 Default color:", RubberDuck.get_default_color())
 
 ### 💡 טיפים
 
-* הפונקציה boost_volume מכפילה את ה- volume פי 2
+הפונקציה boost_volume מכפילה את ה- volume פי 2
 
-* יש להגיש את התרגיל ל- pythonai250824+HWOOP3@gmail.com
+יש להגיש את התרגיל ל- pythonai250824+HWOOP3@gmail.com
