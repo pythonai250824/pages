@@ -48,7 +48,7 @@ print("🔊 New volume:", duck.quack_volume)
 duck.boost_volume()
 print("🚀 Boosted volume:", duck.quack_volume)
 
-print("🎨 Default color:", RubberDuck.get_default_color())
+print("🎨 Default color:", RubberDuck.get_color())
 ```
 
 ---
