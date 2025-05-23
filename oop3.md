@@ -15,7 +15,7 @@
 +---------------------------------------------------------------+
 | + __init__(quack_volume=5)                                    |
 | + squeak(): None                         [@static-method]     |
-| + get_default_color(): str               [@class-method]      |
+| + get_color(): str                       [@class-method]      |
 | + boost_volume(): None                   [instance-method]    |
 | + quack_volume: int                      [@property]          |
 | + quack_volume(value: int): None         [@setter]            |
@@ -57,4 +57,10 @@ print("🎨 Default color:", RubberDuck.get_default_color())
 
 הפונקציה boost_volume מכפילה את ה- volume פי 2
 
+הפונקציה squeak מדפיסה "duck is squeaking..."
+
+הפונקציה get_color מחזירה את הצבע של מחלקת הברווזים
+
 יש להגיש את התרגיל ל- pythonai250824+HWOOP3@gmail.com
+
+קוד לדוגמא: https://github.com/pythonai250824/21.05.2025/blob/master/space_ship.py
