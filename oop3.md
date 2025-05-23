@@ -55,8 +55,6 @@ print("🎨 Default color:", RubberDuck.get_default_color())
 
 ### 💡 טיפים
 
-* `__str__` היא מתודה שמחזירה תיאור מחשובת של האובייקט
-* להקפיד על שימוש נכון בין `@staticmethod`, `@classmethod`, `@property`
+* הפונקציה boost_volume מכפילה את ה- volume פי 2
 
-
-יש להגיש את התרגיל ל- pythonai250824+HWOOP3@gmail.com
+* יש להגיש את התרגיל ל- pythonai250824+HWOOP3@gmail.com
