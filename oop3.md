@@ -10,16 +10,16 @@
 +---------------------------------------------------------------+
 |                        RubberDuck                             |
 +---------------------------------------------------------------+
-| - __color: str = "yellow"               @class-variable        |
-| - __quack_volume: int                                          |
+| - __color: str = "yellow"               @class-variable       |
+| - __quack_volume: int                                         |
 +---------------------------------------------------------------+
-| + __init__(quack_volume=5)                                     |
-| + squeak(): None                         [@static-method]      |
-| + get_default_color(): str               [@class-method]       |
-| + boost_volume(): None                   [instance-method]     |
-| + quack_volume: int                      [@property]           |
-| + quack_volume(value: int): None         [@setter]             |
-| + __str__(): str                         [@instance-method]    |
+| + __init__(quack_volume=5)                                    |
+| + squeak(): None                         [@static-method]     |
+| + get_default_color(): str               [@class-method]      |
+| + boost_volume(): None                   [instance-method]    |
+| + quack_volume: int                      [@property]          |
+| + quack_volume(value: int): None         [@setter]            |
+| + __str__(): str                         [@instance-method]   |
 +---------------------------------------------------------------+
 ```
 
