@@ -24,10 +24,32 @@ def __init__(self, owner: str, balance: float)
   @classmethod
   def get_bank_address(cls) -> str
   ```
+  Returns the bank address.
 
 ---
 
-### 3. Properties (Getters and Setters)
+### 3. Static Method
+
+Add a static method:
+```python
+@staticmethod
+def highest_balance(acc1: "BankAccount", acc2: "BankAccount", acc3: "BankAccount") -> float
+```
+
+- Return the highest balance among the three accounts.
+- No use of `self` or `cls` — it’s a utility.
+
+Example:
+```python
+a1 = BankAccount("A", 300)
+a2 = BankAccount("B", 700)
+a3 = BankAccount("C", 500)
+print(BankAccount.highest_balance(a1, a2, a3))  # → 700.0
+```
+
+---
+
+### 4. Properties (Getters and Setters)
 
 Use `@property` to create:
 
@@ -36,27 +58,7 @@ Use `@property` to create:
 
 ---
 
-### 4. Instance Method
-
-Replace the old static method with:
-
-```python
-def highest_balance(self, acc2: "BankAccount", acc3: "BankAccount") -> float
-```
-
-- Return the highest balance among `self`, `acc2`, and `acc3`
-
-Example:
-```python
-a1 = BankAccount("A", 300)
-a2 = BankAccount("B", 700)
-a3 = BankAccount("C", 500)
-print(a1.highest_balance(a2, a3))  # → 700.0
-```
-
----
-
-### 5. Other Methods
+### 5. Methods
 
 - `deposit(self, amount: float) -> None`
 - `withdraw(self, amount: float) -> None`
@@ -102,7 +104,7 @@ Sets:
 Test all features, including:
 ```python
 print(BankAccount.get_bank_address())
-print(a1.highest_balance(a2, a3))
+print(BankAccount.highest_balance(a1, a2, a3))
 ```
 
 ---
@@ -124,7 +126,7 @@ print(a1.highest_balance(a2, a3))
 | + withdraw(amount): None    |
 | + is_rich(): bool           |
 | + get_bank_address(): str   |
-| + highest_balance(acc2, acc3): float |
+| + highest_balance(acc1, acc2, acc3): float |
 | + __add__(other)            |
 | + __sub__(other)            |
 | + __eq__(other)             |
