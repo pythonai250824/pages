@@ -1,4 +1,4 @@
-## 🏦 Exercise: `BankAccount` Class
+## 🏦 Exercise: `BankAccount` Class (Final Version)
 
 Create a class named `BankAccount` that represents a simple bank account with:
 
@@ -14,7 +14,20 @@ def __init__(self, owner: str, balance: float)
 
 ---
 
-### 2. Properties (Getters and Setters)
+### 2. Class Variable and Class Method
+
+- Add a **private class variable** for the bank's address:  
+  `"1 Allenby St, Tel Aviv"` (actual Discount Bank branch)
+
+- Add a **class method**:
+  ```python
+  @classmethod
+  def get_bank_address(cls) -> str
+  ```
+
+---
+
+### 3. Properties (Getters and Setters)
 
 Use `@property` to create:
 
@@ -23,94 +36,74 @@ Use `@property` to create:
 
 ---
 
-### 3. Methods
+### 4. Instance Method
 
-- `deposit(self, amount: float) -> None`  
-  Add money to the balance
+Replace the old static method with:
 
-- `withdraw(self, amount: float) -> None`  
-  Subtract money (only if there’s enough)
+```python
+def highest_balance(self, acc2: "BankAccount", acc3: "BankAccount") -> float
+```
 
-- `is_rich(self) -> bool`  
-  Return `True` if balance is at least 1,000,000
+- Return the highest balance among `self`, `acc2`, and `acc3`
 
-- `@staticmethod def zero_account(owner: str) -> "BankAccount"`  
-  Create an account with balance 0
+Example:
+```python
+a1 = BankAccount("A", 300)
+a2 = BankAccount("B", 700)
+a3 = BankAccount("C", 500)
+print(a1.highest_balance(a2, a3))  # → 700.0
+```
 
 ---
 
-### 4. Operator Overloading
+### 5. Other Methods
+
+- `deposit(self, amount: float) -> None`
+- `withdraw(self, amount: float) -> None`
+- `is_rich(self) -> bool`
+
+---
+
+### 6. Operator Overloading
 
 - `__add__(self, other)`  
-  You can:
-  - Add **two BankAccount objects**:
-    - If owners are the **same**, return a new account with the **same owner** and combined balance
-    - If owners are **different**, return a new account with:
-      - `owner = "Joint: A & B"` (in original order)
-      - `balance = combined balance`
-      - Example:
-        ```python
-        a1 = BankAccount("John", 200.0)
-        a2 = BankAccount("Kate", 300.0)
-        print(a1 + a2)
-        # BankAccount(owner='Joint: John & Kate', balance=500.0)
-        ```
-
-  - Add a **number** to a BankAccount → return a new account with the same owner and increased balance
+  - Add two accounts → if owners differ, return `"Joint: A & B"`  
+  - Add number → return new account with increased balance
 
 - `__sub__(self, other)`  
-  - Subtract two accounts → return new account with difference in balance (no negatives)
-  - Subtract a number → return new account with decreased balance
+  - Subtract another account or number → return new account
 
 - `__eq__(self, other)`  
-  Return `True` if:
-  - Same owner **and**
-  - Same balance
+  - Compare owner and balance  
+  - Also support comparing with a number or tuple
 
-  Also allow comparing with:
-  - A number (only balance is checked)
-  - A tuple like `("John", 200.0)`
-
-- `__ne__`, `__gt__`, `__ge__`, `__lt__`, `__le__`  
-  Compare based on balance only
+- `__ne__`, `__gt__`, `__ge__`, `__lt__`, `__le__` → compare balance only
 
 - `__repr__`, `__str__`  
-  Show nicely as:
-  ```python
-  BankAccount(owner='Alice', balance=500.00)
-  ```
-
-- `__len__()`  
-  Return the **rounded int** of the balance
-
-- `__getitem__(key)`  
-  Support:
-  - `"owner"` or `0` → return owner
-  - `"balance"` or `1` → return balance
-
-- `__iter__()`  
-  Yield: owner, then balance
+- `__len__()` → rounded balance  
+- `__getitem__(key)` → 'owner', 'balance', 0, 1  
+- `__iter__()` → yields owner, balance
 
 ---
 
-### 5. Bonus Feature 💡
-Add a method:
+### 7. Bonus Feature 💡
+
 ```python
 def freeze(self) -> None
 ```
-This sets:
+Sets:
 - `owner = "FROZEN"`
 - `balance = 0.0`
 
 ---
 
-### 6. Demo Code
+### 8. Demo Code
 
-At the bottom of the file, write code that:
-
-- Creates at least **3 accounts**
-- Tests all methods and operators
-- Prints results clearly
+Test all features, including:
+```python
+print(BankAccount.get_bank_address())
+print(a1.highest_balance(a2, a3))
+```
 
 ---
 
@@ -120,6 +113,7 @@ At the bottom of the file, write code that:
 |-----------------------------|
 |        BankAccount          |
 |-----------------------------|
+| - __bank_address: str       |
 | - __owner: str              |
 | - __balance: float          |
 |-----------------------------|
@@ -129,7 +123,8 @@ At the bottom of the file, write code that:
 | + deposit(amount): None     |
 | + withdraw(amount): None    |
 | + is_rich(): bool           |
-| + zero_account(owner): BankAccount |
+| + get_bank_address(): str   |
+| + highest_balance(acc2, acc3): float |
 | + __add__(other)            |
 | + __sub__(other)            |
 | + __eq__(other)             |
