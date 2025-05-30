@@ -54,7 +54,7 @@ Use `@property` to create:
 
 - `deposit(self, amount: float) -> None`
 - `withdraw(self, amount: float) -> None`
-- `is_rich(self) -> bool` : return True if the balance is larger than 1M otherwise False
+- `is_rich(self) -> bool` : returns True if the balance is larger than 1M otherwise False
 
 ### 6. Operator Overloading
 
