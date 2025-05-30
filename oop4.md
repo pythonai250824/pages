@@ -1,18 +1,14 @@
-## 🏦 Exercise: `BankAccount` Class (Final Version)
+## 🏦 Exercise: `BankAccount` Class 
 
 Create a class named `BankAccount` that represents a simple bank account with:
 
 - `owner`: the name of the account holder (string)
 - `balance`: how much money is in the account (float)
 
----
-
 ### 1. Constructor
 ```python
 def __init__(self, owner: str, balance: float)
 ```
-
----
 
 ### 2. Class Variable and Class Method
 
@@ -25,8 +21,6 @@ def __init__(self, owner: str, balance: float)
   def get_bank_address(cls) -> str
   ```
   Returns the bank address.
-
----
 
 ### 3. Static Method
 
@@ -47,8 +41,6 @@ a3 = BankAccount("C", 500)
 print(BankAccount.highest_balance(a1, a2, a3))  # → 700.0
 ```
 
----
-
 ### 4. Properties (Getters and Setters)
 
 Use `@property` to create:
@@ -56,15 +48,11 @@ Use `@property` to create:
 - `owner` – read-only
 - `balance` – readable and writeable
 
----
-
 ### 5. Methods
 
 - `deposit(self, amount: float) -> None`
 - `withdraw(self, amount: float) -> None`
 - `is_rich(self) -> bool`
-
----
 
 ### 6. Operator Overloading
 
@@ -86,8 +74,6 @@ Use `@property` to create:
 - `__getitem__(key)` → 'owner', 'balance', 0, 1  
 - `__iter__()` → yields owner, balance
 
----
-
 ### 7. Bonus Feature 💡
 
 ```python
@@ -96,8 +82,6 @@ def freeze(self) -> None
 Sets:
 - `owner = "FROZEN"`
 - `balance = 0.0`
-
----
 
 ### 8. Demo Code
 
