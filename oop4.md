@@ -1,5 +1,7 @@
 ## 🏦 Exercise: `BankAccount` Class 
 
+<img src="oop4_uml.jpg" />
+
 Create a class named `BankAccount` that represents a simple bank account with:
 
 - `owner`: the name of the account holder (string)
