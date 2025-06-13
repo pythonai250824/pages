@@ -161,5 +161,6 @@ def main():
 
 Remarks:  
 - do not forget to use getters and setters
-- do not forget to implement __str__  
+- do not forget to implement __str__
+- do not forget use @overrride    
 - feel free to add more functionality as you find compatible
