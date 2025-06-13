@@ -158,3 +158,8 @@ def main():
     for acc in accounts.values():
         print(acc)
 ```
+
+Remarks:  
+- do not forget to use getters and setters
+- do not forget to implement __str__  
+- feel free to add more functionality as you find compatible
