@@ -64,8 +64,8 @@ job: Dev
 ## ✳️ תרגיל 4: ברירת מחדל עם **kwargs
 
 כתוב פונקציה `greet_user` שמדפיסה:
-- "Hello [name]" אם `name` הועבר
-- ואם לא – מדפיסה "Hello guest"
+- "Hello [name]" if `name` was given
+- if not, print "Hello guest"
 
 ```python
 def greet_user(**kwargs):
