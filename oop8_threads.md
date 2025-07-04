@@ -28,8 +28,6 @@ Deepen your understanding of working with threads in Python, including the use o
    - Run them all using `ThreadPoolExecutor`, and at the end print:
      - `"All threads completed!"`
 
-6. Make sure all outputs are correctly numbered per thread, without mixed lines
-
 ## 🧪 Example Expected Output
 
 ```
