@@ -24,11 +24,11 @@ Deepen your understanding of working with threads in Python, including the use o
 ## 🌟 Bonus – Dynamic Version
 
 5. In your main script:
-   - Create a list of `5 to 10` tuples with random names and values between 2 and 6.
+   - Create a list of `5 to 10` tuples with random names and values between 2 and 6
    - Run them all using `ThreadPoolExecutor`, and at the end print:
      - `"All threads completed!"`
 
-6. Make sure all outputs are correctly numbered per thread, without mixed lines.
+6. Make sure all outputs are correctly numbered per thread, without mixed lines
 
 ## 🧪 Example Expected Output
 
