@@ -1,36 +1,36 @@
-# 🥵 Python Multithreading - תרגיל מסכם
+# 🧵 Python Multithreading - Final Exercise
 
-## 🌟 מטרת התרגיל
-להעמיק את ההבנה בעבודה עם threads בפייתון, כלל שימוש ב‎`threading.Thread`, העברת ארגומנטים, המתנה לסיום, בריכת משאבים (`ThreadPoolExecutor`) והדפסה מסונכרנת  
+## 🌟 Exercise Goal
+Deepen your understanding of working with threads in Python, including the use of `threading.Thread`, argument passing, waiting for completion, resource pools (`ThreadPoolExecutor`), and synchronized output.
 
-## ✅ שלב ראשון – יצירת פונקציית הדפסה
+## ✅ Step 1 – Create a Printing Function
 
-1. כתוב פונקציה בשם `print_sequence(name, count)`:
-   - הפונקציה תקבל שם של thread ומספר חזרות.
-   - בכל חזרה היא תדפיס: `Thread <name>: i=<number>`
-   - לאחר כל הדפסה – `time.sleep(0.3)`
+1. Write a function called `print_sequence(name, count)`:
+   - The function should accept a thread name and a number of repetitions.
+   - In each iteration, it should print: `Thread <name>: i=<number>`
+   - After each print, pause for `time.sleep(0.3)`
 
-2. צור 3 threads שונים שמריצים את הפונקציה עם שמות וערכים שונים:
-   - לדוגמה: `("Alpha", 5)`, `("Beta", 3)`, `("Gamma", 4)`
+2. Create 3 separate threads that run the function with different names and values:
+   - Example: `("Alpha", 5)`, `("Beta", 3)`, `("Gamma", 4)`
 
-3. הפעל את שלושת השחבות והמתן שכלם יסיימו (`join`)
+3. Start all threads and wait for them to finish (`join`)
 
-## 🔄 שלב שני – בריכת משאבים
+## 🔄 Step 2 – Thread Pool
 
-4. כתוב את אותה פונקציית `print_sequence`, אבל הפעם השתמש בפעם `ThreadPoolExecutor`:
-   - הגדר בריכה עם `max_workers=2`.
-   - הרץ את הפונקציה עבור כל אחד מהשלב הקודם, עם `executor.submit`
+4. Reuse the same `print_sequence` function, but this time use `ThreadPoolExecutor`:
+   - Define a pool with `max_workers=2`.
+   - Run the function for each name+count from the previous step using `executor.submit`
 
-## 🌟 בונוס – גרסה דינמית
+## 🌟 Bonus – Dynamic Version
 
-5. בקובץ הראשי:
-   - צור רשימה של `5 עד 10` tuples עם שמות רנדומליים וערכים בין 2 לַ׳ 6  
-   - הרץ את כלם עם `ThreadPoolExecutor`, ובסיום הדפס:
+5. In your main script:
+   - Create a list of `5 to 10` tuples with random names and values between 2 and 6.
+   - Run them all using `ThreadPoolExecutor`, and at the end print:
      - `"All threads completed!"`
 
-6. ודא שכל התפוקות מוגדות ממספרים נכונות, לפי כל thread, בלי ערבוב ששורות.
+6. Make sure all outputs are correctly numbered per thread, without mixed lines.
 
-## 🧪 דוגמת תפוקה מצופה
+## 🧪 Example Expected Output
 
 ```
 Thread Alpha: i=0
@@ -42,6 +42,8 @@ Thread Gamma: i=0
 All threads completed!
 ```
 
+Good luck! 🎉
+
+
 הגשה למייל: pythonai250824+OOP8@gmail.com
 
-בהצלחה! 🎉
