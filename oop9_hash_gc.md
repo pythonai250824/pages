@@ -20,7 +20,7 @@ Create a class named `Point` that represents a 2D point with coordinates `x` and
 #### Thinking Questions:
 
 * How many items are actually stored in the dictionary and why
-* What is a hash collision and can it happen here
+* What is a hash collision? and can it happen here?
 * What is reference count in memory and how is it related to GC (garbage collection)
 
 
