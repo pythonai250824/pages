@@ -58,5 +58,6 @@
 * MultiProcess
 * GIL
 * Sharing data across processes
+* Logger
 
 
