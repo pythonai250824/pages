@@ -25,7 +25,7 @@
   * `m` = שיפוע הקו (עלייה חלקי ריצה)
   * `b` = Y נקודת החיתוך עם ציר
 
-    <img src="images/linear1.jpg" />
+    <img src="images/linear1.jpg" width="50%"/>
 
 ## תרגול בכיתה – העבר לצורת y = mx + b
 
@@ -35,9 +35,9 @@
 ## סוגי פתרונות למערכת משוואות
 
 1. פתרון יחיד – ישרים נחתכים בנקודה אחת
-   <img src="images/linear2.jpg" />
+   <img src="images/linear2.jpg" width="50%" />
 3. אין פתרון – ישרים מקבילים
-   <img src="images/linear3.jpg" />
+   <img src="images/linear3.jpg" width="50%" />
 4. אינסוף פתרונות – אותם ישרים (קו חופף)
 
 ## מטריצות
