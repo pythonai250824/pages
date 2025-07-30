@@ -72,7 +72,7 @@ plt.title('Linear Regression - Study Hours vs. Exam Score')
 plt.xlabel('Study Hours')
 plt.ylabel('Exam Score')
 plt.grid(True)  # Add grid to the background
-# plt.legend()    # Show legend
+plt.legend()    # Show legend
 
 # Display the equation of the line on the plot
 plt.text(1, 95, equation, fontsize=12)
