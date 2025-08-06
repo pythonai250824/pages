@@ -35,14 +35,6 @@ Where:
 - $\beta_0, \beta_1, \beta_2, ..., \beta_p$ are the coefficients
 - $\varepsilon$ is the error term
 
-
-
-And our target vector $\mathbf{y}$:
-
-$$\mathbf{y} = \begin{bmatrix} 1200 \\ 1500 \\ 1100 \\ \vdots \\ 1900 \end{bmatrix}$$
-
-Computing $\mathbf{X}^T\mathbf{X}$ and $\mathbf{X}^T\mathbf{y}$, and then solving the normal equation would give us the coefficient vector $\boldsymbol{\beta}$. Due to the complexity of these matrix calculations, we typically use software like Python to compute them:
-
 ```python
 import numpy as np
 from sklearn.linear_model import LinearRegression
