@@ -35,55 +35,7 @@ Where:
 - $\beta_0, \beta_1, \beta_2, ..., \beta_p$ are the coefficients
 - $\varepsilon$ is the error term
 
-### Matrix Representation
 
-Multiple linear regression is most efficiently represented and solved using matrix algebra:
-
-$$\mathbf{y} = \mathbf{X}\boldsymbol{\beta} + \boldsymbol{\varepsilon}$$
-
-Where:
-- $\mathbf{y}$ is an $n \times 1$ vector of dependent variable values
-- $\mathbf{X}$ is an $n \times (p+1)$ matrix of independent variables (including a column of 1s for the intercept)
-- $\boldsymbol{\beta}$ is a $(p+1) \times 1$ vector of coefficients
-- $\boldsymbol{\varepsilon}$ is an $n \times 1$ vector of error terms
-
-### The Normal Equations
-
-Similar to simple linear regression, we want to minimize the **sum of squared errors (SSE)**:
-
-<image src="formula1.jpg" />
-
-In matrix form:
-
-$$SSE = (\mathbf{y} - \mathbf{X}\boldsymbol{\beta})^T(\mathbf{y} - \mathbf{X}\boldsymbol{\beta})$$
-
-<a href="multivariate-linear-regression-math.md">see formula explanation</a>
-
-To find the coefficient values that minimize SSE, we differentiate with respect to $\boldsymbol{\beta}$ and set it equal to zero:
-
-$$\frac{\partial SSE}{\partial \boldsymbol{\beta}} = -2\mathbf{X}^T(\mathbf{y} - \mathbf{X}\boldsymbol{\beta}) = \mathbf{0}$$
-
-This leads to the normal equation:
-
-$$\mathbf{X}^T\mathbf{X}\boldsymbol{\beta} = \mathbf{X}^T\mathbf{y}$$
-
-Solving for $\boldsymbol{\beta}$:
-
-$$\boldsymbol{\beta} = (\mathbf{X}^T\mathbf{X})^{-1}\mathbf{X}^T\mathbf{y}$$
-
-This is the closed-form solution for multiple linear regression.
-
-### Calculation Example
-
-For our apartment price example, let's set up the matrix representation. Our design matrix $\mathbf{X}$ will include a column of 1s for the intercept, followed by columns for each feature:
-
-$$\mathbf{X} = \begin{bmatrix} 
-1 & 70 & 3 & 15 & 5 \\
-1 & 90 & 4 & 10 & 7 \\
-1 & 60 & 2 & 20 & 3 \\
-\vdots & \vdots & \vdots & \vdots & \vdots \\
-1 & 130 & 5 & 3 & 12
-\end{bmatrix}$$
 
 And our target vector $\mathbf{y}$:
 
