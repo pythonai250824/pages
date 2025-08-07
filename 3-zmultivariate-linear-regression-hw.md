@@ -101,3 +101,8 @@ This means:
 2. כתוב את משוואת החיזוי המתקבלת
 3. חזה את המשכורת הצפויה לעובד עם 6 שנות ניסיון, 16 שנות השכלה, 43 שעות עבודה שבועיות, ו-2 שנות ניסיון ניהולי
 4. אילו מהמשתנים הם המשפיעים ביותר על המשכורת? הסבר כיצד הגעת למסקנה זו
+
+## 📤 הגשה
+
+יש לשלוח את הפתרון למייל:
+📧 [pythonai250824+linmvhw@gmail.com](mailto:pythonai250824+linmvhw@gmail.com)
