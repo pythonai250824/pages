@@ -111,9 +111,9 @@ Predicted minimum running time: 49.93 seconds
 
 הגרף שיוצג יראה את הפרבולה (קו אדום) שמתאימה לנתונים, כאשר הנקודה האופטימלית (ירוקה) מסמנת את מספר שעות האימון האופטימלי
 
-## Understanding scikit-learn Pipeline for Polynomial Regression
+### הסבר לקוד הפייטון שלב-שלב
 
-## The Code
+#### ה- pipeline
 
 ```python
 import numpy as np
@@ -133,8 +133,6 @@ polynomial_model = Pipeline([
 ])
 ```
 
-## What is a Pipeline?
-
 A `Pipeline` in scikit-learn is a utility that allows you to chain multiple processing steps together in a sequence. This creates a single estimator that applies all transformations in order before applying the final estimator. Pipelines provide several advantages:
 
 - Clean code that is easier to read and maintain
@@ -142,11 +140,11 @@ A `Pipeline` in scikit-learn is a utility that allows you to chain multiple proc
 - Simplified parameter tuning across all steps
 - One single interface for fitting and prediction
 
-## How This Pipeline Works
+**How This Pipeline Works**
 
 In this example, the pipeline consists of two steps:
 
-### Step 1: Polynomial Feature Generation
+Step 1: Polynomial Feature Generation  
 ```python
 ('poly', PolynomialFeatures(degree=2))
 ```
@@ -160,7 +158,7 @@ This step:
 
 For example, if the input is `[5]`, it becomes `[1, 5, 25]`.
 
-### Step 2: Linear Regression
+Step 2: Linear Regression  
 ```python
 ('linear', LinearRegression())
 ```
@@ -170,7 +168,7 @@ This step:
 - Fits a linear model to these features
 - Effectively fits a polynomial function to the original data
 
-## How It's Applied to the Data
+How It's Applied to the Data  
 
 In this example:
 - `training_hours` is the input feature (number of hours trained)
@@ -184,7 +182,7 @@ The result is a quadratic model of the form:
 
 <img src="images/formula6.jpg"/>
 
-## Under the Hood
+#### Under the Hood  
 
 When you call methods on this pipeline, the following happens:
 
