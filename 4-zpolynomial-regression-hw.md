@@ -22,7 +22,7 @@
 3. מהי כמות הדשן האופטימלית שתביא ליבול מקסימלי?
 4. מה היבול המקסימלי הצפוי לפי המודל?
 
-<a href="4-polynomial-regression.md">ראה דוגמא כאן</a>
+<a href="4-polynomial-regression.md">ראה דוגמא לפתרון כאן</a>
 
 ## 📤 הגשה
 
