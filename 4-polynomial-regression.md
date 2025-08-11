@@ -195,7 +195,7 @@ When you call methods on this pipeline, the following happens:
 
 The coefficients of the linear model (accessible via `polynomial_model.named_steps['linear'].coef_`) correspond to the weights for each polynomial term.
 
-## דוגמת הרצה עם np.polyfit
+## דוגמת הרצה לאותו התרגיל בדיוק עם ספרייה אחרת בשם- np.polyfit
 
 ```python
 import numpy as np
