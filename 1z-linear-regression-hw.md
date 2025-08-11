@@ -89,7 +89,7 @@ Line equation: y = 4.52x + 56.53
 To get a score of 100, approximately 9.62 hours of study are needed
 ```
 
-<img src="lin1.png" />
+<img src="images/lin1.png" />
 
 ## תרגיל
 

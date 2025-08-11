@@ -244,11 +244,11 @@ To get a score of 100, approximately 9.62 hours of study are needed
 
 גרף ההתכנסות יראה את הירידה בפונקציית העלות:
 
-<img src="lingd1.png" style="width:60%" />
+<img src="images/lingd1.png" style="width:60%" />
 
 וגרף הרגרסיה יציג את הקו הטוב ביותר שמצאנו:
 
-<img src="lingd2.png" style="width:60%" />
+<img src="images/lingd2.png" style="width:60%" />
 
 ## השוואה בין הגישות
 

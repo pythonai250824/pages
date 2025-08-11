@@ -77,7 +77,7 @@ Note: There may be small differences between our manual calculations here and th
 
 ## גרף
 
-<img src="lin1.png" style="width:40%;"/>
+<img src="images/lin1.png" style="width:40%;"/>
 
 הקו המיטבי שמתאים לנתונים שלנו עובר בקירוב דרך הנקודות ומאפשר לנו לחזות ערכים חדשים.
 
@@ -145,7 +145,7 @@ To get a score of 100, approximately 9.62 hours of study are needed
 
 ותוצג תמונה של גרף עם קו הרגרסיה שחוצה את הנקודות, והחיזוי שלנו מסומן בירוק
 
-<img src="lin2.png" style="width:60%" />
+<img src="images/lin2.png" style="width:60%" />
 
 על פי המודל שלנו, כדי לקבל ציון של 100 במבחן, יש צורך ללמוד בערך 10.06 שעות
 

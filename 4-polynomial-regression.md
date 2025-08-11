@@ -25,7 +25,7 @@
 
 ## גרף
 
-<img src="poly1.png" style="width:60%;"/>
+<img src="images/poly1.png" style="width:60%;"/>
 
 הגרף מראה את התאמת הרגרסיה הפולינומיאלית (הקו האדום) לנתונים שלנו (הנקודות הכחולות). אפשר לראות שהמודל הפולינומיאלי מצליח לתפוס את המגמה הלא-לינארית בנתונים - שיפור בביצועים עם עלייה בשעות האימון עד לנקודה מסוימת, ולאחר מכן ירידה בביצועים.
 
@@ -107,7 +107,7 @@ Optimal training hours: 20.46
 Predicted minimum running time: 49.93 seconds
 ```
 
-<img src="poly2.png" style="width: 60%" />
+<img src="images/poly2.png" style="width: 60%" />
 
 הגרף שיוצג יראה את הפרבולה (קו אדום) שמתאימה לנתונים, כאשר הנקודה האופטימלית (ירוקה) מסמנת את מספר שעות האימון האופטימלי
 
@@ -182,7 +182,7 @@ When you call `polynomial_model.fit(training_hours, running_times)`, the pipelin
 
 The result is a quadratic model of the form:
 
-<img src="formula6.jpg"/>
+<img src="images/formula6.jpg"/>
 
 ## Under the Hood
 

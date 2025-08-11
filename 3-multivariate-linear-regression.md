@@ -51,7 +51,7 @@ Where:
 
 Similar to simple linear regression, we want to minimize the **sum of squared errors (SSE)**:
 
-<image src="formula1.jpg" />
+<img src="images/formula1.jpg" />
 
 In matrix form:
 
@@ -138,9 +138,9 @@ This means:
 
 ## גרף
 
-<img src="mul1.png" style="width:60%;"/>
-<img src="mul2.png" style="width:60%;"/>
-<img src="mul3.png" style="width:80%;"/>
+<img src="images/mul1.png" style="width:60%;"/>
+<img src="images/mul2.png" style="width:60%;"/>
+<img src="images/mul3.png" style="width:80%;"/>
 
 בניגוד לרגרסיה לינארית פשוטה, שניתן לייצג בקלות בגרף דו-ממדי, רגרסיה לינארית מרובת משתנים דורשת ייצוג מורכב יותר. הגרף מציג ויזואליזציה של הקשר בין שטח הדירה לבין המחיר, כאשר גודל הנקודות מייצג את מספר החדרים והצבע מייצג את גיל המבנה. קשה לייצג את כל המשתנים בגרף אחד, ולכן לעתים קרובות משתמשים במספר גרפים או בשיטות ויזואליזציה מתקדמות.
 
