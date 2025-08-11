@@ -266,6 +266,10 @@ Optimal training hours: 17.92
 Predicted minimum running time: 48.87 seconds
 ```
 
+---
+
+# נספח - ההבדל בין 2 הפתרונות
+
 # Difference Between Linear Regression and Polyfit
 
 Linear regression (specifically sklearn.linear_model.LinearRegression) and NumPy's polyfit are both methods for fitting models to data, but they differ in several important ways:
