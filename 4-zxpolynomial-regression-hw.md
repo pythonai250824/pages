@@ -2,8 +2,6 @@
 
 **Goal**: Use a scatter plot to visually guess the type of relationship between the variables, then choose the appropriate regression model
 
----
-
 ## Dataset 1
 
 This dataset represents the relationship between **hours spent in the gym per week** (X) and **muscle mass gain in kg** (Y)
@@ -20,8 +18,6 @@ This dataset represents the relationship between **hours spent in the gym per we
 |              7 |               17.1 |
 |              8 |               19.2 |
 |              9 |               21.0 |
-
----
 
 ## Dataset 2
 
@@ -52,8 +48,6 @@ This dataset represents the relationship between **daily weightlifting load in k
 5. 🧮 **For Polynomial Regression only**: Report **MSE, MAE, RMSE, R², Adjusted R²** for train and test
 6. 🎯 For curved models, find the **optimal point (vertex)** using $x^* = -\frac{b}{2a}$ and plot it
 7. 📏 **For Linear Regression only**: Calculate and report **MSE, MAE, RMSE, R²** for the dataset
-
----
 
 💡 **Remark**: For Polynomial Regression you can use either the `LinearRegression` class from scikit-learn with `PolynomialFeatures` or the `np.polyfit` function from NumPy.
 
