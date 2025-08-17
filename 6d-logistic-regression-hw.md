@@ -2,7 +2,7 @@
 
 ## Exercise 1 — Binary Logistic Regression (single feature)
 
-**Story**: \*x\* is the **minutes of brisk activity per day** and \*y\* is whether the person **hit 10k steps** that day (1 = yes, 0 = no)
+**Story**: *x* is the **minutes of brisk activity per day** and *y* is whether the person **hit 10k steps** that day (1 = yes, 0 = no)
 
 ### Dataset
 
@@ -44,7 +44,7 @@
 
 ## Exercise 2 — Logistic Regression with Two Features (multi-binary)
 
-**Story**: \*x1\* is **study hours per week** and \*x2\* is **average sleep hours per night**. \*y\* is **passed the mock exam** (1 = pass, 0 = fail)
+**Story**: *x1* is **study hours per week** and *x2* is **average sleep hours per night**. *y* is **passed the mock exam** (1 = pass, 0 = fail)
 
 ### Dataset
 
