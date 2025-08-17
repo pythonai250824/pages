@@ -74,7 +74,7 @@ $$
 מטריצת בלבול (Confusion Matrix) היא טבלה –  
 אבל ניתן להמחיש אותה בצורה ברורה יותר עם מפת חום (Heatmap)
 
-<img src="log3.png" />
+<img src="images/log3.png" />
 
 ```python
 import numpy as np
