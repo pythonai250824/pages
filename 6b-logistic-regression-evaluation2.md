@@ -75,7 +75,7 @@ $$
 
 ### מהו **F1**
 
-**F1** הוא הממוצע ההרמוני של **Precision** ו־**Recall**
+ה- **F1** הוא הממוצע ההרמוני של **Precision** ו־**Recall**
 
 $$
 F1 = 2 \cdot \frac{Precision \cdot Recall}{Precision + Recall}
