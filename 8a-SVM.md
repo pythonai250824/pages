@@ -2,7 +2,7 @@
 
 ## 🧠 מה זה SVM?
 
-SVM היא שיטת **למידת מכונה מונחית (Supervised Learning)**, שנועדה:
+ה- SVM היא שיטת **למידת מכונה מונחית (Supervised Learning)**, שנועדה:
 - **לסווג** דוגמאות (Classification)
 - או לבצע **רגרסיה** (Regression – חיזוי ערכים רציפים)
 
