@@ -311,52 +311,6 @@ Decision boundary equation: 0.19*x1 + -0.27*x2 + 33.15 = 0
 דוגמא להפרדה לסוגי פרחים שונים על פי אורך עלי הכותרת SEPAL
 <img src="images/svm9.png" style="width: 80%" />
 
----
-
-## 🔍 דוגמא - בעיית XOR
-
-בעיית XOR היא דוגמא קלאסית לנתונים שלא ניתנים להפרדה בקו ישר:
-
-<img src="images/svm17.png" style="width: 70%" />
-
-### עם קרנל RBF ניתן לפתור את בעיית XOR:
-
-```python
-from sklearn.svm import SVC
-import matplotlib.pyplot as plt
-import numpy as np
-
-# סט נתונים של XOR
-X = np.array([[0, 0], [0, 1], [1, 0], [1, 1]])
-y = np.array([0, 1, 1, 0])
-
-# יצירת מודל עם קרנל RBF
-model = SVC(kernel='rbf')
-model.fit(X, y)
-
-# הדמיה
-h = 0.01
-x_min, x_max = -0.5, 1.5
-y_min, y_max = -0.5, 1.5
-xx, yy = np.meshgrid(np.arange(x_min, x_max, h),
-                     np.arange(y_min, y_max, h))
-
-Z = model.predict(np.c_[xx.ravel(), yy.ravel()])
-Z = Z.reshape(xx.shape)
-
-plt.contourf(xx, yy, Z, cmap=plt.cm.Paired, alpha=0.8)
-plt.scatter(X[:, 0], X[:, 1], c=y, cmap=plt.cm.Paired)
-plt.title('Solving XOR using RBF')
-plt.show()
-```
-
-
-
-מבנים שלא ניתנים לחלוקה על ידי קו ישר:
-
-![XOR Problem](https://miro.medium.com/max/1400/1*_7OPgojau8hkiPUiHoGK_w.png)
-
----
 
 ## חלוקה ל train-test ובדיקת דיוק
 
