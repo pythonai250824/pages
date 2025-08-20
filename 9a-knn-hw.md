@@ -17,12 +17,12 @@
 
 1. תקנן את הנתונים באמצעות נרמול Min-Max
 2. השתמש באלגוריתם KNN עם K=3 לניבוי האם לקוח חדש בגיל 27, עם הכנסה שנתית של 95 אלפי ₪ וותק אשראי של 3 שנים, יחזיר את ההלוואה שלו
-3. המשתמש ב GRID SEARCH CV ובדוק מה מהפרמטרים הבאים יניב את התוצאות הטובות ביותר:
-param_grid = {
-    'n_neighbors': list(range(1, 31)),
-    'weights': ['uniform', 'distance'],
-    'metric': ['euclidean', 'manhattan']
-}
+3. המשתמש ב GRID SEARCH CV ובדוק מה מהפרמטרים הבאים יניב את התוצאות הטובות ביותר:  
+param_grid = {  
+    'n_neighbors': list(range(1, 31)),  
+    'weights': ['uniform', 'distance'],  
+    'metric': ['euclidean', 'manhattan']  
+}  
 4. **בונוס**: חשב את המרחק האוקלידי מהלקוח החדש לכל אחד מהלקוחות במאגר הנתונים ומצא את 3 השכנים הקרובים ביותר
 
 **Submission email**: [pythonai250824+knnhw@gmail.com](mailto:pythonai250824+knnhw@gmail.com)
