@@ -72,4 +72,4 @@
 3. *Bonus: Write the regression equation
 4. Compute the predicted probability for the point `[x1, x2] = [6.5, 7.5]`
 
-**Submission email**: [pythonai280524+loghw@gmail.com](mailto:pythonai280524+loghw@gmail.com)
+**Submission email**: [pythonai250824+loghw@gmail.com](mailto:pythonai250824+loghw@gmail.com)
