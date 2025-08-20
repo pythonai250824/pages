@@ -22,6 +22,4 @@ n_neighbors: 1-31
 weights: [uniform, distance]   
 metric: [euclidean, manhattan]   
 
-4. **בונוס**: חשב את המרחק האוקלידי מהלקוח החדש לכל אחד מהלקוחות במאגר הנתונים ומצא את 3 השכנים הקרובים ביותר
-
 **Submission email**: [pythonai250824+knnhw@gmail.com](mailto:pythonai250824+knnhw@gmail.com)
