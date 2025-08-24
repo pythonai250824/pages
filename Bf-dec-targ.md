@@ -25,3 +25,5 @@
 
 ראה דוגמא:
 <a href="Bb-dec-process.md#example" >הקלק כאן</a>
+
+**Submission email**: [pythonai250824+dectreehw@gmail.com](mailto:pythonai250824+dectreehw@gmail.com)
