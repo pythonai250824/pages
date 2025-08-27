@@ -128,12 +128,16 @@ print("Model trained")
 model_filename = 'linear_model_with_scaler.joblib'
 joblib.dump(model, model_filename)
 print(f"Model saved to {model_filename}")
+```
 
-# 5. Load the model
+**predict with scale:**
+
+```python
+# Load the model
 loaded_model = joblib.load(model_filename)
 print(f"Model loaded from {model_filename}")
 
-# 6. Make predictions with loaded model
+# Make predictions with loaded model
 X_new = np.array([[6, 10], [7, 11]])
 
 # AUTOMATIC SCALING (happens inside the pipeline)
