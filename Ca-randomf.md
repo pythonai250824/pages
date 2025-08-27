@@ -131,9 +131,6 @@ X = np.column_stack((study_hours, sleep_hours, had_breakfast))
 # Target data (pass/fail)
 y = np.array([0, 1, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 1, 0, 0, 1, 0])
 
-# Feature names for better visualization
-feature_names = ["Study Hours", "Sleep Hours", "Had Breakfast"]
-
 # Split the data into training and testing sets
 X_train, X_test, y_train, y_test = train_test_split(
     X, y, test_size=0.3, random_state=42
