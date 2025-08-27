@@ -15,10 +15,11 @@
 | 40  | 2                | 250                 | כן          |
 | 50  | 3                | 350                 | כן          |
 
-1. בנו מודל Random Forest שמנבא האם לקוח יקבל פיצוי.
-2. חלקו את הדאטה לסט אימון וסט בדיקה (train/test split).
-3. אימנו את המודל על סט האימון.
-4. חשבו את דיוק המודל (`Model Accuracy`) על סט הבדיקה.
-5. חשבו את דיוק ה־Out-of-Bag (`OOB Accuracy`) של המודל.
-6. הציגו דוח סיווג (classification report) עם precision, recall ו־f1-score.
-7. הסבירו בקצרה מה ההבדל בין דיוק רגיל ל־OOB Accuracy.
+1. בנו מודל Random Forest שמנבא האם לקוח יקבל פיצוי
+2. חלקו את הדאטה לסט אימון וסט בדיקה (train/test split)
+3. אימנו את המודל על סט האימון
+4. חשבו את דיוק המודל (`Model Accuracy`) על סט הבדיקה
+5. חשבו את דיוק ה־Out-of-Bag (`OOB Accuracy`) של המודל
+6. הציגו דוח סיווג (classification report) עם precision, recall ו־f1-score
+7. הסבירו בקצרה מה ההבדל בין דיוק רגיל ל־OOB Accuracy
+8. שמרו את המודל באמצעות joblib ולאחר מכן טענו אותו ובצעו פרדיקציה
