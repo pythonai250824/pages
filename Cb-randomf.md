@@ -27,15 +27,6 @@ Gini Impurity is a measure of how "pure" a node is. In classification:
 - A node is **pure** if all examples belong to the same class.
 - A node is **impure** if there's a mix of classes.
 
-The formula for Gini Impurity is:
-
-\[
-G = 1 - \sum_{i=1}^{C} p_i^2
-\]
-
-Where:
-- \( C \) is the number of classes
-- \( p_i \) is the probability of a sample being in class \( i \) at that node
 
 The goal is to **choose the split that minimizes impurity**
 
