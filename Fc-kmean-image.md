@@ -77,7 +77,15 @@ for k in k_values:
     kmeans.fit(pixels)
 
     # Replace each pixel with the centroid color of its cluster
+    #
+    # instead of:
+    #   new_colors = []
+    #   for label in kmeans.labels_:
+    #      new_colors.append(kmeans.cluster_centers_[label])    
+    # 
+    # doing it in 1 line (np shortcut):
     new_colors = kmeans.cluster_centers_[kmeans.labels_]
+
     new_image = new_colors.reshape(original_shape).astype(np.uint8)
 
     # Plot result
