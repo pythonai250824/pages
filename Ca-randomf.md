@@ -184,35 +184,33 @@ weighted avg       1.00      1.00      1.00         6
 - בסוף אוספים את כל התחזיות ומקבלים החלטה סופית
 
 ### דיוק המודל (Model Accuracy) מול Out-of-Bag Accuracy
-
+  
 בואו נבין בצורה ברורה מה ההבדל בין שני מדדי הדיוק החשובים האלו: `Model Accuracy` ו־`OOB Accuracy`
-
+  
 #### ✅ מה זה `accuracy_score` ואיך מחשבים אותו?
-
+  
 ```python
 accuracy = accuracy_score(y_true, y_pred)
 ```
-
+  
 זו פשוט הנוסחה:
-
-\[
-\text{Accuracy} = \frac{CorrectPredictions}{TotalPredictions}
-\]
-
+  
+<p align="center"><img src="https://latex.codecogs.com/gif.latex?\text{Accuracy}%20=%20\frac{CorrectPredictions}{TotalPredictions}"/></p>  
+  
+  
 #### דוגמה:
 אם היו לך 10 דוגמאות, והמודל ניחש נכון ב־9 מהן:
-
-\[
-\text{Accuracy} = \frac{9}{10} = 0.90
-\]
-
+  
+<p align="center"><img src="https://latex.codecogs.com/gif.latex?\text{Accuracy}%20=%20\frac{9}{10}%20=%200.90"/></p>  
+  
+  
 #### מה זה Out-of-Bag Accuracy (OOB Accuracy)?
-
+  
 כשאנחנו משתמשים ב־**Bootstrapping** (מדגם עם החזרה), כל עץ ביער רנדומלי מקבל רק חלק מהשורות מהדאטה
-
+  
 - חלק מהשורות **לא נכנסות בכלל** לאימון של אותו עץ — אלו נקראות **Out-of-Bag samples**
 - אנחנו יכולים להשתמש בשורות האלו כדי לבדוק **כמה טוב העץ מנבא דוגמאות שהוא לא ראה**
-
+  
 **התהליך:**
 - עבור כל דוגמה — אוספים תחזיות רק מהעצים **שלא ראו אותה באימון**
 - לוקחים ממוצע/רוב קולות → זו התחזית הסופית
