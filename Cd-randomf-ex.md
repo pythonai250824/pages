@@ -23,3 +23,5 @@
 6. הציגו דוח סיווג (classification report) עם precision, recall ו־f1-score
 7. הסבירו בקצרה מה ההבדל בין דיוק רגיל ל־OOB Accuracy
 8. שמרו את המודל באמצעות joblib ולאחר מכן טענו אותו ובצעו פרדיקציה
+
+**Submission email**: [pythonai250824+rndfhw@gmail.com](mailto:pythonai250824+rndfhw@gmail.com)
