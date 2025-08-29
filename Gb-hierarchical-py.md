@@ -44,13 +44,6 @@ plt.show()
 פ- **`AgglomerativeClustering`** מ־`sklearn` → אתה מגדיר מראש כמה קבוצות (`n_clusters`) והתוצאה היא וקטור תוויות  
 פ- **`fcluster`** מ־`scipy.cluster.hierarchy` → אתה מגדיר cutoff (מרחק או מספר קבוצות) וככה מקבלים תוויות  
 
----
-
-### בקיצור:
-- `linkage` = רק מחשב מבנה ההיררכיה  
-- `dendrogram` = רק מצייר  
-- `AgglomerativeClustering` / `fcluster` = נותנים לך את שיוך הנקודות לקבוצות  
-
 
 ## דנדרוגרמה (Ward Linkage) – הסבר
 
