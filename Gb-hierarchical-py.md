@@ -41,8 +41,8 @@ plt.show()
 
 כדי באמת לדעת לאיזה אשכול (cluster) שייך כל נקודה יש להשתמש באחת מהאפשרויות:
 
-פ- **`AgglomerativeClustering`** מ־`sklearn` → אתה מגדיר מראש כמה קבוצות (`n_clusters`) והתוצאה היא וקטור תוויות.  
-פ- **`fcluster`** מ־`scipy.cluster.hierarchy` → אתה מגדיר cutoff (מרחק או מספר קבוצות) וככה מקבלים תוויות.  
+פ- **`AgglomerativeClustering`** מ־`sklearn` → אתה מגדיר מראש כמה קבוצות (`n_clusters`) והתוצאה היא וקטור תוויות  
+פ- **`fcluster`** מ־`scipy.cluster.hierarchy` → אתה מגדיר cutoff (מרחק או מספר קבוצות) וככה מקבלים תוויות  
 
 ---
 
