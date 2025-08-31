@@ -31,18 +31,29 @@ plt.title("Dendrogram (Ward Linkage)")
 plt.xlabel("Data Point Index")
 plt.ylabel("Distance")
 plt.show()
+
+# 6. Cut the tree into 3 clusters and get labels (1..3)
+cluster_labels = fcluster(linkage_matrix, t=6, criterion='maxclust')
+
+# 7. Attach labels back to the (scaled or original) dataframe
+df['cluster'] = cluster_labels  # or df_scaled['cluster'] = cluster_labels
+
+# (Optional) quick peek at counts
+print(df['cluster'].value_counts().sort_index())
 ```
 
 <img src="images/hier7.png" style="width: 100%" />
 
-הפונקציה `linkage` מ־`scipy.cluster.hierarchy` מחשבת את היררכיית האיחוד (linkage matrix) — כלומר, היא מייצרת את העץ שעליו מבוססת הדנדרוגרמה  
-
-אבל היא **לא מחזירה תוויות (labels) לקבוצות**.
-
-כדי באמת לדעת לאיזה אשכול (cluster) שייך כל נקודה יש להשתמש באחת מהאפשרויות:
-
-פ- **`AgglomerativeClustering`** מ־`sklearn` → אתה מגדיר מראש כמה קבוצות (`n_clusters`) והתוצאה היא וקטור תוויות  
-פ- **`fcluster`** מ־`scipy.cluster.hierarchy` → אתה מגדיר cutoff (מרחק או מספר קבוצות) וככה מקבלים תוויות  
+```
+cluster
+1    17
+2    33
+3    11
+4    39
+5    23
+6    27
+Name: count, dtype: int64
+```
 
 
 ## דנדרוגרמה (Ward Linkage) – הסבר
