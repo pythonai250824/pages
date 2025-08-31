@@ -33,7 +33,7 @@ plt.ylabel("Distance")
 plt.show()
 
 # 6. Cut the tree into 3 clusters and get labels (1..3)
-cluster_labels = fcluster(linkage_matrix, t=6, criterion='maxclust')
+cluster_labels = fcluster(linkage_matrix, t=3, criterion='maxclust')
 
 # 7. Attach labels back to the (scaled or original) dataframe
 df['cluster'] = cluster_labels  # or df_scaled['cluster'] = cluster_labels
@@ -46,12 +46,9 @@ print(df['cluster'].value_counts().sort_index())
 
 ```
 cluster
-1    17
-2    33
-3    11
-4    39
-5    23
-6    27
+1    50
+2    50
+3    50
 Name: count, dtype: int64
 ```
 
