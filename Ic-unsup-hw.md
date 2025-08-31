@@ -19,7 +19,8 @@
 ### בונוס
 
 8. צור ב- KMEAN את אותו מספר הקבוצות וספור כמה יש בכל קבוצה. האם יצא מספרים זהים? מדוע לדעתך
-9. נסה לצמצם את מספר הפיצ'רים באמצעות PCA, הדפס את רמת השונות אחרי הוספת כל PCA כפי שעשינו בכיתה
-קוד לדוגמא: https://github.com/pythonai250824/31.08.2025/blob/main/pca_31_08_2025.ipynb
+9. נסה לצמצם את מספר הפיצ'רים באמצעות PCA, הדפס את רמת השונות אחרי הוספת כל PCA כפי שעשינו בכיתה  
+קוד לדוגמא: https://github.com/pythonai250824/31.08.2025/blob/main/pca_31_08_2025.ipynb   
+[דוגמא 2]
 
 **Submission email**: [pythonai250824+unsuphw@gmail.com](mailto:pythonai250824+unsuphw@gmail.com)
