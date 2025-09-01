@@ -66,14 +66,13 @@ print(f"Percentage of outliers: {100 * np.sum(labels == -1) / len(labels):.2f}%\
 
 <img src="images/dbscanA13.png" style="width: 100%" />
 
-```
 Default DBSCAN outliers:
 Number of outliers: 62
 Percentage of outliers: 4.13%
-```
+
+### Different Epsilon Values
 
 ```python
-# --------- Different Epsilon Values ---------
 epsilons = [0.1, 0.5, 2.0]
 
 plt.figure(figsize=(15, 5))
@@ -91,8 +90,9 @@ plt.show()
 
 <img src="images/dbscanA14.png" style="width: 100%" />
 
+### Different Min
+
 ```python
-# --------- Different MinPoints Values ---------
 min_points = [2, 5, 20]
 
 plt.figure(figsize=(15, 5))
@@ -110,8 +110,9 @@ plt.show()
 
 <img src="images/dbscanA15.png" style="width: 100%" />
 
+### Elbow Method for Finding Optimal Epsilon
+
 ```python
-# --------- Elbow Method for Finding Optimal Epsilon ---------
 eps_range = np.linspace(0.1, 2.0, 20)
 number_of_outliers = []
 
@@ -131,6 +132,8 @@ plt.show()
 ```
 
 <img src="images/dbscanA16.png" style="width: 100%" />
+
+<img src="images/dbscanA17.png" style="width: 100%" />
 
 
 
