@@ -34,7 +34,8 @@ from tensorflow.keras.layers import Dense
 from sklearn.preprocessing import StandardScaler
 
 # ----- data -----
-X = np.array([30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, 85, 90], dtype=float).reshape(-1, 1)
+X = np.array([30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, 85, 90], dtype=float)/
+       .reshape(-1, 1)
 y = np.array([0, 0, 0, 0, 0, 1, 0, 1, 1, 1, 1, 1, 1], dtype=float).reshape(-1, 1)
 
 # scale input
