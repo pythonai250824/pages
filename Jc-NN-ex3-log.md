@@ -34,7 +34,7 @@ from tensorflow.keras.layers import Dense
 from sklearn.preprocessing import StandardScaler
 
 # ----- data -----
-X = np.array([30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, 85, 90], dtype=float)/
+X = np.array([30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, 85, 90], dtype=float)\
        .reshape(-1, 1)
 y = np.array([0, 0, 0, 0, 0, 1, 0, 1, 1, 1, 1, 1, 1], dtype=float).reshape(-1, 1)
 
@@ -65,7 +65,7 @@ print(model.predict(scaler.fit_transform([[58]])))
 Output:
 ```
 X:  
- [30, 35, 40, 45, 50, 55, 60, 65, 70, 75]
+ [30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, 85, 90]
 Predicted probabilities: 
  [0.416 0.436 0.457 0.477 0.498 0.519 0.539 0.56  0.58  0.6   0.62  0.639 0.658]
 Predicted classes: 
