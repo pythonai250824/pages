@@ -290,7 +290,13 @@ import numpy as np
 from keras.preprocessing import image
 
 # טוענים את התמונה
-test_image = image.load_img('/content/dataset/single_prediction/cat_or_dog.jpg_1', target_size=(64, 64))
+img_path = '/content/dataset/CNN_dog_cat_dataset/dataset/single_prediction/cat_or_dog_1.jpg'
+test_image = image.load_img(img_path, target_size=(64, 64))
+
+img = image.load_img(img_path)
+plt.imshow(img)
+plt.axis('off')
+plt.show()
 
 # Convert image to array
 test_image = image.img_to_array(test_image)
@@ -317,6 +323,41 @@ print(prediction)
 <img src="images/cnn17.png" style="width:40%"/>
 
 <img src="images/cnn18.jpg" style="width:40%"/>
+
+```python
+import numpy as np
+from keras.preprocessing import image
+
+# טוענים את התמונה
+img_path = '/content/dataset/CNN_dog_cat_dataset/dataset/single_prediction/cat_or_dog_2.jpg'
+test_image = image.load_img(img_path, target_size=(64, 64))
+
+img = image.load_img(img_path)
+plt.imshow(img)
+plt.axis('off')
+plt.show()
+
+# Convert image to array
+test_image = image.img_to_array(test_image)
+
+# Normalize pixel values (rescale to [0,1])
+test_image = test_image / 255.0
+
+# Expand dimensions to match the CNN model input shape
+test_image = np.expand_dims(test_image, axis=0)
+
+# Predict using the trained CNN model
+result = cnn.predict(test_image)
+print(result)
+
+# Interpret the result
+if result[0][0] > 0.5:
+    prediction = 'dog'
+else:
+    prediction = 'cat'
+
+print(prediction)
+```
 
 הסבר:
 
