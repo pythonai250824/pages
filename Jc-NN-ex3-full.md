@@ -395,7 +395,7 @@ scaled_customer_details = scaler.transform(new_customer_details)
 print(ann.predict(scaled_customer_details) > 0.5)
 ```
 
-### נספח - binary_crossentropy 
+## נספח - binary_crossentropy 
 
 <a id="formula">הסבר נוסחא</a>
 
