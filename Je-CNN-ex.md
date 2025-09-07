@@ -359,6 +359,8 @@ else:
 print(prediction)
 ```
 
+<img src="images/cat.png" style="width:40%"/>
+
 הסבר:
 
 * `image.load_img` טוען את התמונה ומכווץ אותה לגודל המתאים
