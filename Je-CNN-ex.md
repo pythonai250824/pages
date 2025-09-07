@@ -359,7 +359,7 @@ else:
 print(prediction)
 ```
 
-<img src="images/cat.png" style="width:40%"/>
+<img src="images/cat.jpg" style="width:40%"/>
 
 הסבר:
 
