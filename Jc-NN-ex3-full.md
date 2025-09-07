@@ -397,7 +397,7 @@ print(ann.predict(scaled_customer_details) > 0.5)
 
 ### נספח - binary_crossentropy 
 
-<a id="#formula">הסבר נוסחא</a>
+<a id="formula">הסבר נוסחא</a>
 
 $$
 \text{Loss} = - \left[ y \cdot \log(\hat{y}) + (1 - y) \cdot \log(1 - \hat{y}) \right]
