@@ -193,7 +193,7 @@ ann.compile(optimizer='sgd', loss='binary_crossentropy', metrics=['accuracy'])
 אבל אם המודל חוזה 0.1 וזה בעצם צריך להיות 1  
 אז זו טעות גדולה וה־loss יהיה גבוה
 
-<a href="formula">ראה נספח הסבר נוסחא</a>
+<a href="#formula">ראה נספח הסבר נוסחא</a>
 
 ## שלב 7 – אימון Training
 
