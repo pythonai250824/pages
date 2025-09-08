@@ -10,6 +10,8 @@ Train a CNN model that can identify if a person in an image **wears a mask** or 
 
 follow the steps we did in class <a href="Jf-CNN-ex.md">See here</a>
 
+colab file: <a href="https://colab.research.google.com/drive/1tqiJxNiY7m2fgAYr6BzDdkM6PUOCkKlY?usp=sharing">colab link</a>
+
 ## Steps
 
 ### 1. Import Libraries
