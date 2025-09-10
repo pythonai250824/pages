@@ -105,24 +105,7 @@ sat        VERB       verb
 ...
 ```
 
-### 8. Accessing the Pipeline + Custom Sentence Separator
-
-**Task:**  
-Write a function that uses `^` as a **custom sentence separator** (instead of a period or semicolon). The function should split a given string into separate sentences wherever the `^` symbol appears.
-
-Example input:
-```python
-"SpaCy is great^It helps with NLP tasks^Really useful."
-```
-
-Expected output:
-```text
-Sentence: SpaCy is great
-Sentence: It helps with NLP tasks
-Sentence: Really useful.
-```
-
-### 9. POS Tagging + Displacy Visualization
+### 8. POS Tagging + Displacy Visualization
 **Task:**  
 Ask the user to input a sentence using `input()`, print each word with its POS tag, and then display it using `spacy.displacy.render`.
 
