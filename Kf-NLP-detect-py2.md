@@ -96,6 +96,7 @@
 ה־`CountVectorizer` מאמן את עצמו **רק על קבוצת האימון (3900 הודעות)**  
 ולכן מטריצת הספירה שהוא מחזיר היא בגודל **3900 × N מילים**
 
+<img src="images/nlpe4.jpg" style="width: 60%" />
 
 <img src="images/nlpe5.jpg" style="width: 60%" />
 
@@ -132,7 +133,9 @@ Print sample row:
 ה- TF-IDF = Term Frequency – Inverse Document Frequency  
 הוא מחשב ציון משוקלל לכל מילה לפי:
 - **TF** – כמה פעמים המילה מופיעה במסמך (כמו בספירה)
-- **IDF** – כמה היא נדירה בכל שאר המסמכים
+- **IDF** – כמה היא נדירה בכל שאר המסמכים  
+- **N** - כמות המסמכים
+- **df(t)** - כמות הפעמים שהמילה מופיעה סך הכול
 
 $$
 \text{TF-IDF}(t, d) = \text{TF}(t, d) \times \log \left( \frac{N}{df(t)} \right)
@@ -182,25 +185,6 @@ $$
 
 📌 כך אפשר לראות איך מילה נדירה מקבלת **ציון גבוה יותר**, בעוד מילה שכיחה מדי (כמו "NLP" פה) מקבלת **ציון 0**
 
-<img src="images/nlpe6.jpg" style="width: 60%" />
-
-### מהו TfidfVectorizer?
-
-ה- TfidfVectorizer מקצר את הפעולה הקודמת
-
-זו רק דוגמא פה כיצד להשתמש בו
-
-זה פשוט שילוב של 2 השלבים הקודמים לתוך שלב מאוחד
-
-**קודם כל נבין מה קרה בשני השלבים:**
-
-1. **CountVectorizer**  
-   סופר כמה פעמים כל מילה מופיעה בטקסט  
-   יוצר מטריצה של: כמה פעמים מילה א מופיעה במסמך ב
-
-2. **TfidfTransformer**  
-   לוקח את מטריצת הספירה ומחשב TF-IDF  
-   כלומר – במקום רק לספור, הוא שוקל את החשיבות היחסית של כל מילה
 
 **אז למה בכלל יש `TfidfVectorizer`?**
 
@@ -223,23 +207,19 @@ X_tfidf = TfidfTransformer().fit_transform(X_counts)
 X_tfidf = TfidfVectorizer().fit_transform(X_train)
 ```
 
-**מתי נשתמש בזה?**
+### או ב- pipeline
 
-- אם אתה **רוצה שליטה מלאה** – תשתמש ב־`CountVectorizer` + `TfidfTransformer`
-- אם אתה **רוצה קיצור דרך** ונוחות – פשוט תשתמש ב־`TfidfVectorizer`
+```python
+svc_pipeline = Pipeline([('tfidf', TfidfVectorizer()),
+                       ('svc', LinearSVC())
+                      ])
 
-**📌 סיכום קצר:**
-
-| שיטה | שלבים | יתרון |
-|------|--------|--------|
-| CountVectorizer + TfidfTransformer | 2 שלבים | שליטה ידנית |
-| TfidfVectorizer | שלב אחד | פשוט ויעיל |
-
-
-
-<img src="images/nlpe7.jpg" style="width: 30%" />
+svc_pipeline.fit(X_train, y_train)
+```
 
 ### 🧠 אימון מודל סיווג עם LinearSVC
+
+<img src="images/nlpe7.jpg" style="width: 30%" />
 
 **🧠 מה זה LinearSVC ואיך הוא שונה ממודלים אחרים?**
 
