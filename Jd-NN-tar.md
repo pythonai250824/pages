@@ -50,3 +50,5 @@ y = np.array([[0], [0], [0], [0], [0], [1], [0], [1], [1], [1], [1], [1], [1]], 
 income_58 = scaler.transform(np.array([[58]]))
 
 ```
+
+**Submission email**: [pythonai250824+anndhw@gmail.com](mailto:pythonai250824+anndhw@gmail.com)
