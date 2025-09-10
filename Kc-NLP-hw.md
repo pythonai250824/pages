@@ -121,3 +121,6 @@ is         AUX       auxiliary
 looking    VERB      verb
 ...
 ```
+
+
+**Submission email**: [pythonai250824+nlphw@gmail.com](mailto:pythonai250824+nlphw@gmail.com)
