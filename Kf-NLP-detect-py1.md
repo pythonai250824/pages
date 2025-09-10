@@ -31,9 +31,12 @@
 ## Python code
 
 ```python
-# Create a dataframe from the tsv file
+from sklearn.pipeline import Pipeline
+from sklearn.feature_extraction.text import TfidfVectorizer
+from sklearn.svm import LinearSVC
 import pandas as pd
 
+# Create a dataframe from the tsv file
 df = pd.read_csv('smsspamcollection.tsv', sep='\t')
 df.head()
 
@@ -47,8 +50,6 @@ X = df['message']
 y = df['label']
 
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=101)
-
-from sklearn.pipeline import Pipeline
 
 svc_pipeline = Pipeline([('tfidf', TfidfVectorizer()),
                        ('svc', LinearSVC())
@@ -67,9 +68,10 @@ print(metrics.classification_report(y_test, predictions))
 print()
 print(metrics.accuracy_score(y_test, predictions))
 
-svc_pipeline.predict([
+print()
+print(svc_pipeline.predict([
    "TEXT WON to 12345 to get your prize, you have been selected as WINNER!!"
-])
+]))
 
-svc_pipeline.predict(["Hey Tom, how are you today?"])
+print(svc_pipeline.predict(["Hey Tom, how are you today?"]))
 ```
