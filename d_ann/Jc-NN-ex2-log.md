@@ -59,7 +59,7 @@ print("Predicted classes:", preds.ravel())
 
 print()
 print('prediction for 58K:')
-print(model.predict(scaler.fit_transform([[58]])))
+print(model.predict(scaler.transform([[58]])))
 ```
 
 Output:
