@@ -16,7 +16,7 @@
 
 מהו מחיר דירה צפוי לדירה עם 5.5 חדרים?
 
-<a href="Jc-NN-ex2-lin.md">see exmaple: Jc-NN-ex2-lin </a>
+<a href="Jc-NN-ex1-lin.md">see exmaple: Jc-NN-ex2-lin </a>
 
 ---
 
@@ -39,6 +39,6 @@
 
 מה ההסתברות שנהג עם 6.5 שנות ותק יקבל הנחה?
 
-<a href="Jc-NN-ex3-log.md">see exmaple:  Jc-NN-ex3-log </a>
+<a href="Jc-NN-ex2-log.md">see exmaple:  Jc-NN-ex3-log </a>
 
 **Submission email**: [pythonai250824+ann1hw@gmail.com](mailto:pythonai250824+ann1hw@gmail.com)
